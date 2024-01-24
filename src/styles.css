@@ -1,1 +1,166 @@
 /* You can add global styles to this file, and also import other style files */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+font-family: 'Poppins', sans-serif;
+    
+  }
+  html {
+    font-size: 100%;
+    color: #ddd;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased !important;
+    text-rendering: optimizelegibility;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  h1, h2, h3{
+    font-size: 64px;
+    line-height: 1.328125;
+    font-weight: 900;
+  }
+  body{
+    font-family: Georgia, serif;
+    font-size: 21px;
+    line-height: 1.57142857;
+  }
+  section{
+    height: 100vh;
+    width: 100%;
+    background: whi;
+    background-position: center;
+    &.over{
+      position: relative;
+      z-index: 10;
+    }
+    .over-inner{
+      position: relative;
+    }
+    .under-inner{
+      color: white;
+      height: 100vh;
+      position: relative;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+      background-size: cover;
+    }
+    .one{
+      background-image: url("assets/soaps1.jpg");
+    }
+    .two{
+      background-image: url("assets/soap4.jpg");
+    }
+    .three{
+      background-image: url("assets/stack6.png");
+    }
+    .four{
+      background-image: url("assets/stack5.png");
+    }
+    .five{
+      background-image: url("assets/soap6.jpg");
+    }
+  }
+  
+  .centered{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    padding: 0 10%;
+    transform: translateY(-50%);
+  }
+  .fixed{
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    opacity: 0;
+    transition: opacity 100ms linear;
+    z-index: 0;
+    margin: 0;
+  }
+  .locked{
+    position: fixed;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 1;
+    transition: opacity 100ms linear;
+  
+  }
+
+  .center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -50px; /* margin is -0.5 * dimension */
+    margin-top: -25px;
+  }
+  article {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 1.75rem;
+    margin: 0 0 0.75rem 0;
+  }
+  
+  section {
+    color: #fff;
+    text-align: center;
+  }
+  
+  div {
+    height: 100%;
+  }
+  /* Pattern styles */
+  .container {
+    display: table;
+    width: 100%;
+  }
+  
+  .left-half {
+    background-image: url("assets/sopa2.jpg");
+    position: absolute;
+    left: 0px;
+    width: 50%;
+    background-size: cover;
+  }
+  
+  .right-half {
+    background-color: #fff;
+    position: absolute;
+    right: 0px;
+    width: 50%;
+  }
+  .left-half1 {
+    
+    background-color: #fff;
+    position: absolute;
+    left: 0px;
+    width: 50%;
+  }
+  
+  .right-half1 {
+    background-image: url("assets/soap3.jpg");
+    position: absolute;
+    right: 0px;
+    width: 50%;
+    background-size: cover;
+  }
+  .sticky-div {
+    position: fixed;
+    top:634px;
+    right: 0;
+    /* background-color: #f0f0f0; */
+    padding: 10px;
+    z-index: 100;
+}

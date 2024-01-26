@@ -158,9 +158,20 @@ font-family: 'Poppins', sans-serif;
   }
   .sticky-div {
     position: fixed;
-    top:634px;
+    bottom: 0;
     right: 0;
-    /* background-color: #f0f0f0; */
-    padding: 10px;
-    z-index: 100;
+    z-index: 15;
+    padding: 15px;
+    background-color: transparent; /* Bootstrap dark background color */
+    color: white; /* Text color */
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+}
+.whatsapp-img {
+  vertical-align: text-bottom;
+  border-radius: 50%;
+}
+body {
+  margin-bottom: 60px; /* Adjust this based on your sticky div's height */
 }

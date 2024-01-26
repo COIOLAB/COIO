@@ -1,15 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
 
 *{
-    margin: 0;
+  margin: 0;
     padding: 0;
+    /*
+     
     box-sizing: border-box;
-    font-family: 'Oswald', sans-serif;
-font-family: 'Poppins', sans-serif;
-    
+    font-family: 'Poppins', sans-serif;   
+    */
   }
   html {
+    width: 100%;
     font-size: 100%;
+    overflow-x: hidden !important;
     color: #ddd;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
@@ -24,14 +27,17 @@ font-family: 'Poppins', sans-serif;
     font-weight: 900;
   }
   body{
-    font-family: Georgia, serif;
+    /* font-family: Georgia, serif;
+    
+    width: 100%; */
     font-size: 21px;
     line-height: 1.57142857;
+
   }
   section{
     height: 100vh;
     width: 100%;
-    background: whi;
+    background: transparent;
     background-position: center;
     &.over{
       position: relative;
@@ -157,21 +163,28 @@ font-family: 'Poppins', sans-serif;
     background-size: cover;
   }
   .sticky-div {
-    position: fixed;
+    /* position: fixed;
     bottom: 0;
     right: 0;
     z-index: 15;
-    padding: 15px;
+    padding: 15px; */
     background-color: transparent; /* Bootstrap dark background color */
     color: white; /* Text color */
-    border-radius: 5px;
-    width: 50px;
-    height: 50px;
+    /* border-radius: 5px; */
+    /* width: 50px;
+    height: 50px; */
 }
 .whatsapp-img {
-  vertical-align: text-bottom;
+  /* vertical-align: text-bottom;
+  margin-right:20vw;
+  z-index: 100; */
+  position: fixed;
+  bottom: 3vw;
   border-radius: 50%;
+    right: 3vw;
+   /* width: 200px;
+    height: 50px; */
+    display: block !important;
+    z-index: 99999 !important;
 }
-body {
-  margin-bottom: 60px; /* Adjust this based on your sticky div's height */
-}
+

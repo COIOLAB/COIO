@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
-
+  ScrollToBottom(){
+    window.scrollTo({
+      top: document.body.scrollHeight,
+      behavior: 'smooth' // Optional: Smooth scrolling animation
+    });
+  }
 }

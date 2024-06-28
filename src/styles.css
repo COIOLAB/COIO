@@ -26084,3 +26084,9 @@ screen and (max-height: 300px) {
 	bottom: 30% !important;
 	transform: translateY(-50%);
 }
+
+@media screen and (max-width: 768px) {
+	.hide-on-mobile {
+	  display: none !important;
+	}
+  }

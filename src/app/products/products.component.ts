@@ -1,30 +1,35 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-products',
   templateUrl: './products.component.html',
   styleUrls: ['./products.component.css']
 })
-export class ProductsComponent {
-
+export class ProductsComponent implements OnInit {
+  ngOnInit(): void {
+    this.ScrollToTop()
+  }
+  ScrollToTop(){
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth' // Optional: Smooth scrolling animation
+    });
+  }
   activeFilter: string = 'all';
   cards = [
-    { imgSrc: 'assets/images/hampers/h1.jpg', title: 'Hamper', description: 'Lorem ipsum dolor..', dataName: 'Hamper' },
-    { imgSrc: 'assets/images/hampers/h2.jpg', title: 'Hamper', description: 'Lorem ipsum dolor..', dataName: 'Hamper' },
-    { imgSrc: 'assets/images/hampers/h3.jpg', title: 'Hamper', description: 'Lorem ipsum dolor..', dataName: 'Hamper' },
-    { imgSrc: 'assets/images/hampers/h4.jpg', title: 'Hamper', description: 'Lorem ipsum dolor..', dataName: 'Hamper' },
-    { imgSrc: 'assets/images/hampers/h5.jpg', title: 'Hamper', description: 'Lorem ipsum dolor..', dataName: 'Hamper' },
-    { imgSrc: 'assets/images/soaps/s1.jpg', title: 'Soap', description: 'Lorem ipsum dolor..', dataName: 'Soap' },
-    { imgSrc: 'assets/images/soaps/s2.jpg', title: 'Soap', description: 'Lorem ipsum dolor..', dataName: 'Soap' },
-    { imgSrc: 'assets/images/soaps/s3.jpg', title: 'Soap', description: 'Lorem ipsum dolor..', dataName: 'Soap' },
-    { imgSrc: 'assets/images/oils/o1.JPG', title: 'Oils', description: 'Lorem ipsum dolor..', dataName: 'Oils' },
-    { imgSrc: 'assets/images/oils/o2.jpg', title: 'Oils', description: 'Lorem ipsum dolor..', dataName: 'Oils' },
-    { imgSrc: 'assets/images/oils/o3.jpg', title: 'Oils', description: 'Lorem ipsum dolor..', dataName: 'Oils' },
-    { imgSrc: 'assets/images/lamps/l1.jpg', title: 'Lamps', description: 'Lorem ipsum dolor..', dataName: 'Oils' },
-    { imgSrc: 'assets/images/lamps/l3.jpg', title: 'Lamps', description: 'Lorem ipsum dolor..', dataName: 'Oils' },
-    { imgSrc: 'assets/images/lamps/l2.jpg', title: 'Lamps', description: 'Lorem ipsum dolor..', dataName: 'Oils' },
-    { imgSrc: 'assets/images/lamps/l4.jpg', title: 'Lamps', description: 'Lorem ipsum dolor..', dataName: 'Oils' },
-    { imgSrc: 'assets/images/lamps/l5.jpg', title: 'Lamps', description: 'Lorem ipsum dolor..', dataName: 'Oils' },
+    { imgSrc: 'assets/images/hampers/h1.jpg', title: 'Jumbo Hamper', description: ' COIO Handcrafted Gift Solutions is here for you.. \n❌ No Artificial Colors \n❌ No Chemicals \n❌ No paraben and SLS \n✅ Healthy \n✅ Actual ingredient Additions', dataName: 'Hamper' },
+    { imgSrc: 'assets/images/hampers/h2.jpg', title: 'Jumbo Hamper', description: ' COIO Handcrafted Gift Solutions is here for you.. \n❌ No Artificial Colors \n❌ No Chemicals \n❌ No paraben and SLS \n✅ Healthy \n✅ Actual ingredient Additions', dataName: 'Hamper' },
+    { imgSrc: 'assets/images/hampers/h3.jpg', title: 'Jumbo Hamper', description: ' COIO Handcrafted Gift Solutions is here for you.. \n❌ No Artificial Colors \n❌ No Chemicals \n❌ No paraben and SLS \n✅ Healthy \n✅ Actual ingredient Additions', dataName: 'Hamper' },
+    { imgSrc: 'assets/images/hampers/h4.jpg', title: 'Jumbo Hamper', description: ' COIO Handcrafted Gift Solutions is here for you.. \n❌ No Artificial Colors \n❌ No Chemicals \n❌ No paraben and SLS \n✅ Healthy \n✅ Actual ingredient Additions', dataName: 'Hamper' },
+    { imgSrc: 'assets/images/hampers/h5.jpg', title: 'Mini Hamper', description: ' COIO Handcrafted Gift Solutions is here for you.. \n❌ No Artificial Colors \n❌ No Chemicals \n❌ No paraben and SLS \n✅ Healthy \n✅ Actual ingredient Additions', dataName: 'Hamper' },
+    { imgSrc: 'assets/images/soaps/s1.jpg', title: 'Coconut Soap - 90gm', description: '✅Organic \n✅ Handmade \n✅ Vegan \n✅ Artifical Colors \n❌ Animal Cruelty \n❌ Artificial Chemicals \n❌ Parabens', dataName: 'Soap' },
+    { imgSrc: 'assets/images/soaps/s2.jpg', title: 'Termeric Soap - 90gm', description: '✅Organic \n✅ Handmade \n✅ Vegan \n✅ Artifical Colors \n❌ Animal Cruelty \n❌ Artificial Chemicals \n❌ Parabens', dataName: 'Soap' },
+    { imgSrc: 'assets/images/soaps/s3.jpg', title: 'Coffee Soap - 90gm', description: '✅Organic \n✅ Handmade \n✅ Vegan \n✅ Artifical Colors \n❌ Animal Cruelty \n❌ Artificial Chemicals \n❌ Parabens', dataName: 'Soap' },
+    { imgSrc: 'assets/images/oils/o1.jpg', title: 'Hair Oil - 100gm', description: ' 11 different types of herbs naturally infused by cold pressed method in COIO Cold Pressed Coconut Oil. \n✅ Organic \n✅ Natural \n✅ Vegan \n❌ Chemicals \n❌ Preservatives \n❌ Artificial additives', dataName: 'Oils' },
+    { imgSrc: 'assets/images/oils/o2.jpg', title: 'Cold Pressed Oil - 200gm', description: 'Cold pressed Homemade Coconut oil, made from a special Banavali species of Coconut. \n First by Segregation of best coconuts. \n Sun Drying for high oil extraction.\n Coconuts are then put in Cold press machine to extract best water like looking oil.', dataName: 'Oils' },
+    { imgSrc: 'assets/images/oils/o3.jpg', title: 'Cold Pressed Oil - 500gm', description: 'Cold pressed Homemade Coconut oil, made from a special Banavali species of Coconut. \n First by Segregation of best coconuts. \n Sun Drying for high oil extraction.\n Coconuts are then put in Cold press machine to extract best water like looking oil.', dataName: 'Oils' },
+    { imgSrc: 'assets/images/lamps/l3.jpg', title: 'Coconut Shell Lamp', description: ' Perfect for Romantic Dinner | Dim-light Relaxation | Gifting | Unique Festival Decoration  \n❌ Artificial Chemicals\n✅ Organic\n✅ Eco-Friendly\n✅ Sustainable', dataName: 'Lamps' },
+    { imgSrc: 'assets/images/lamps/l4.jpg', title: 'Coconut Shell Lamp Hamper', description: 'Perfect for Romantic Dinner | Dim-light Relaxation | Gifting | Unique Festival Decoration  \n❌ Artificial Chemicals\n✅ Organic\n✅ Eco-Friendly\n✅ Sustainable', dataName: 'Lamps' },
 
   ];
 
@@ -37,7 +42,7 @@ export class ProductsComponent {
   }
   newArray:any=[];
   chunkArray(array: any[], size: number): any[][] {
-    const filteredArray = this.activeFilter !== 'all' ? this.cards.filter(e => e.title === this.activeFilter) : this.cards;
+    const filteredArray = this.activeFilter !== 'all' ? this.cards.filter(e => e.dataName === this.activeFilter) : this.cards;
     const chunkedArray: any[][] = [];
     for (let i = 0; i < filteredArray.length; i += size) {
       chunkedArray.push(filteredArray.slice(i, i + size));

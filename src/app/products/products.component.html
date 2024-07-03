@@ -1,27 +1,27 @@
 <div class="container">
     <!-- Images Filter Buttons Section -->
-    <div class="row mt-5" id="filter-buttons">
-      <div class="col-12 justify-content-center d-flex" >
-        <button class="button button-secondary button-pipaluk mt-0 mx-2" [class.active]="activeFilter === 'all'" (click)="setFilter('all')">Show all</button>
-        <button class="button button-secondary button-pipaluk mt-0 mx-2" [class.active]="activeFilter === 'Hamper'" (click)="setFilter('Hamper')">Hampers</button>
-        <button class="button button-secondary button-pipaluk mt-0 mx-2" [class.active]="activeFilter === 'Soap'" (click)="setFilter('Soap')">Soaps</button>
-        <button class="button button-secondary button-pipaluk mt-0 mx-2" [class.active]="activeFilter === 'Oils'" (click)="setFilter('Oils')">Oils</button>
-        <button class="button button-secondary button-pipaluk mt-0 mx-2" [class.active]="activeFilter === 'Lamps'" (click)="setFilter('Lamps')">Lamps</button>
+    <div class=" container-fluid mt-5" id="filter-buttons">
+      <div class="col-12 justify-content-center d-flex flex-wrap" >
+        <button class="button button-secondary button-pipaluk my-2 mx-2" [class.active]="activeFilter === 'all'" (click)="setFilter('all')">Show all</button>
+        <button class="button button-secondary button-pipaluk my-2 mx-2" [class.active]="activeFilter === 'Hamper'" (click)="setFilter('Hamper')">Hampers</button>
+        <button class="button button-secondary button-pipaluk my-2 mx-2" [class.active]="activeFilter === 'Soap'" (click)="setFilter('Soap')">Soaps</button>
+        <button class="button button-secondary button-pipaluk my-2 mx-2" [class.active]="activeFilter === 'Oils'" (click)="setFilter('Oils')">Oils</button>
+        <button class="button button-secondary button-pipaluk my-2 mx-2" [class.active]="activeFilter === 'Lamps'" (click)="setFilter('Lamps')">Home Decor</button>
 
       </div>
     </div>
     <!-- Filterable Images / Cards Section -->
     <div class="row px-2 mt-4 gap-3" id="filterable-cards">
       <ng-container *ngFor="let chunk of chunkArray(cards, 4)">
-        <div class="row">
+        <!-- <div class="row"> -->
           <div class="card p-0 col-md-4" *ngFor="let card of chunk" >
-            <img [src]="card.imgSrc" alt="img">
+            <img loading="lazy" [src]="card.imgSrc" alt="img">
             <div class="card-body">
               <h6 class="card-title">{{ card.title }}</h6>
               <p class="card-text">{{ card.description }}</p>
             </div>
           </div>
-        </div>
+        <!-- </div> -->
       </ng-container>
     </div>
   </div>

@@ -5,11 +5,11 @@
                 <div class="col-sm-6 col-md-12 col-lg-3 col-xl-4">
                     <div class="oh-desktop">
                         <div class="wow slideInRight" data-wow-delay="0s">
-                            <h6 class="text-spacing-100 text-uppercase">Contact us</h6>
+                            <h6 class="text-spacing-100 text-uppercase">Reach Out to Us</h6>
                             <ul class="footer-contacts d-inline-block d-sm-block">
                                 <li>
                                     <div class="unit">
-                                        <div class="unit-left"><span class="icon fa fa-phone"></span></div>
+                                        <div class="unit-left"><fa-icon [icon]="faPhone"  style="font-size:20px"></fa-icon></div>
                                         <div class="unit-body"><a class="link-phone"
                                                 href="https://wa.me/+919108283427">
                                                 +91 9108283427</a></div>
@@ -17,17 +17,17 @@
                                 </li>
                                 <li>
                                     <div class="unit">
-                                        <div class="unit-left"><span class="icon fa fa-envelope"></span></div>
+                                        <div class="unit-left"><fa-icon [icon]="faEnvelope"  style="font-size:20px"></fa-icon></div>
                                         <div class="unit-body"><a class="link-aemail"
                                                 href="mailto:smpatwatkar2000@gmail.com">ifarm.official@gmail.com</a></div>
                                     </div>
-                                </li>
-                                <!-- <li>
+                                </li>                               
+                                <li>
                                     <div class="unit">
-                                        <div class="unit-left"><span class="icon fa fa-location-arrow"></span></div>
-                                        <div class="unit-body"><a class="link-location" href="#">address</a></div>
+                                        <div class="unit-left"><fa-icon [icon]="faHome"  style="font-size:20px"></fa-icon></div>
+                                        <div class="unit-body"><a class="link-location" href="#">{{address}} </a></div>
                                     </div>
-                                </li> -->
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -74,13 +74,11 @@
     <div class="footer-corporate-bottom-panel">
         <div class="container">
             <div class="row justfy-content-xl-space-berween row-10 align-items-md-center2">
-                <div class="col-sm-6 col-md-4 text-sm-right text-md-center">
+                <div class="col-sm-6 col-md-4 text-sm-right ">
                     <div>
                         <ul class="list-inline list-inline-sm footer-social-list-2">
-                            <li><a class="icon fa fa-facebook" href="#"></a></li>
-                            <li><a class="icon fa fa-twitter" href="#"></a></li>
-                            <li><a class="icon fa fa-google-plus" href="#"></a></li>
-                            <li><a class="icon fa fa-instagram" href="#"></a></li>
+                            <li><a href="https://www.instagram.com/official_coio/"><fa-icon [icon]="faInstagram"  style="font-size:30px;color:#E1306C;"></fa-icon> </a></li>
+                            <li><fa-icon [icon]="faFacebook"  style="font-size:30px;color: #1877F2;"></fa-icon></li>
                         </ul>
                     </div>
                 </div>

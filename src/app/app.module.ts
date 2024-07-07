@@ -9,6 +9,8 @@ import { ContentComponent } from './content/content.component';
 import { NewContentComponent } from './new-content/new-content.component';
 import { ProductsComponent } from './products/products.component';
 import { FooterComponent } from './footer/footer.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ReviewListComponent } from './review-list/review-list.component';
 
 @NgModule({
   declarations: [
@@ -18,11 +20,13 @@ import { FooterComponent } from './footer/footer.component';
     ContentComponent,
     NewContentComponent,
     ProductsComponent,
-    FooterComponent
+    FooterComponent,
+    ReviewListComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

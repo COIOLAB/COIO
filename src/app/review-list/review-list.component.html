@@ -1,0 +1,34 @@
+<section class="section section-sm">
+    <div class="container">
+        <h3>Customer Reviews</h3>
+        <div class="row row-30">
+            <div *ngFor="let rev of reviewList" class="col-sm-6 ">
+                <article class="box-icon-classic">
+                    <div
+                        class="unit box-icon-classic-body flex-column flex-md-row text-md-left flex-lg-column text-lg-center flex-xl-row text-xl-left">
+                        <div class="unit-left">
+                            <div class="box-icon-classic-icon fl-bigmug-line-equalization3"></div>
+                        </div>
+                        <div class="unit-body">
+                            <h5 class="box-icon-classic-title"><a href="#">{{rev.name}}</a></h5>
+                            <p class="box-icon-classic-text">{{rev.review}}</p>
+                            <span>
+                                <ul>
+                                    <li  *ngFor="let rating in generateRange(rev.rating)">
+                                        <fa-icon [icon]="star" style="font-size:20px"></fa-icon>
+                                    </li>
+                                </ul>
+                            </span> 
+                            <ng-container *ngFor="let chunk of generateRange(rev.rating)">
+                                <!-- </div> -->   <fa-icon [icon]="star" style="font-size:20px; color:goldenrod;"></fa-icon>
+                              </ng-container>
+                                
+                        </div>
+                    </div>
+                </article>
+            </div>
+           
+                  
+        </div>
+    </div>
+</section>

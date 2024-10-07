@@ -32,6 +32,7 @@ export class ProductsComponent implements OnInit {
     { imgSrc: 'assets/images/oils/o3.jpg', title: 'Cold Pressed Coconut Oil \u2022 500ml', description: 'Cold pressed |No preservatives added |All purpose oil| Made from a special Banavali species of Coconut. \n First by Segregation of best coconuts. \n Sun Drying for high oil extraction.\n Coconuts are then put in Cold press machine to extract best water like looking oil.', dataName: 'Oils' },
     { imgSrc: 'assets/images/lamps/l3.jpg', title: 'Coconut Soap Holder', description: ' Dim-light Relaxation | Gifting | Unique Festival Decoration Coconut Soap Case / Planter Perfect soap holder for your bathroom | unique decor item |Can be used as both planter/soap holder Made from actual  natural coconut shell \n✅ Organic\n✅ Eco-Friendly\n✅ Sustainable \n❌ Artificial Chemicals', dataName: 'Lamps' },
     { imgSrc: 'assets/images/lamps/l4.jpg', title: 'Coconut Shell Lamp Hamper', description: 'Perfect for Romantic Dinner | Dim-light Relaxation | Gifting | Unique Festival Decoration\n✅ Organic\n✅ Eco-Friendly\n✅ Sustainable  \n❌ Artificial Chemicals', dataName: 'Lamps' },
+    { imgSrc: 'assets/images/lamps/l4.jpg', title: 'Handcrafted Coconut bowl', description: 'Perfect for Gifting | Gifting | Unique Festival Decoration\n✅ Organic\n✅ Eco-Friendly\n✅ Sustainable  \n❌ Artificial Chemicals', dataName: 'Lamps' },
 
   ];
 
